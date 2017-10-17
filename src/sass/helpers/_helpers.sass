@@ -31,3 +31,39 @@
 =xs
   +r(599)
     @content
+
+
+// lazy load img
+.placeholder
+  background-size: cover
+  background-repeat: no-repeat
+  position: relative
+  overflow: hidden
+
+
+.placeholder img
+  position: absolute
+  opacity: 0
+  top: 0
+  left: 0
+  transition: opacity 1s linear
+
+
+.placeholder img.loaded
+  opacity: 1
+
+
+.img-small
+  +blur(35px)
+  transform: scale(1)
+//=======================//
+
+// container
+
+.container
+  max-width: 1240px
+  margin: 0 auto
+  +r(1270)
+    margin: 0 20px
+
+//=======================//

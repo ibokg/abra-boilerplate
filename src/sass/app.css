@@ -1,3 +1,30 @@
+.placeholder {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden; }
+
+.placeholder img {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: opacity 1s linear; }
+
+.placeholder img.loaded {
+  opacity: 1; }
+
+.img-small {
+  filter: blur(35px);
+  transform: scale(1); }
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto; }
+  @media only screen and (max-width: 1270px) {
+    .container {
+      margin: 0 20px; } }
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
 h6, p, blockquote, pre, a, abbr, acronym, address, big,
 cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
@@ -68,19 +95,13 @@ body {
   align-items: center;
   text-align: center;
   font-size: 16px;
-  line-height: 1.4; }
+  line-height: 1.6; }
 
 a {
   font-family: "Roboto Regular", sans-serif;
   font-size: 14px;
+  font-size: 1.4rem;
   color: #323232;
   text-decoration: none; }
-
-.container {
-  max-width: 1240px;
-  margin: 0 auto; }
-  @media only screen and (max-width: 1270px) {
-    .container {
-      margin: 0 20px; } }
 
 /*# sourceMappingURL=app.css.map */
