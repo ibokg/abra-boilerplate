@@ -1,0 +1,49 @@
+<svg id="Group_10" data-name="Group 10" xmlns="http://www.w3.org/2000/svg" viewBox="191 65 170 30.08">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        font-size: 8px;
+        font-family: Roboto-Thin, Roboto;
+        font-weight: 200;
+      }
+
+      .cls-2 {
+        font-size: 13px;
+        font-family: Roboto-Regular, Roboto;
+      }
+
+      .cls-3 {
+        fill: #f8ff45;
+      }
+    </style>
+  </defs>
+  <text id="Разработка_сайтов_на_1С-Битрикс" data-name="Разработка сайтов на 1С-Битрикс" class="cls-1" transform="translate(213 91)"><tspan x="0" y="0">Разработка сайтов на 1С-Битрикс</tspan></text>
+  <text id="ABR_X_BRA" data-name="ABR@X@BRA" class="cls-2" transform="translate(235 79)"><tspan x="0" y="0">ABR</tspan><tspan class="cls-3" y="0">@</tspan><tspan y="0">X</tspan><tspan class="cls-3" y="0">@</tspan><tspan y="0">BRA</tspan></text>
+  <g id="pg_2" data-name="pg 2" transform="translate(191.05 66.944)">
+    <g id="Group_4" data-name="Group 4" transform="translate(-0.05 6.493)">
+      <g id="Group_2" data-name="Group 2" transform="translate(0 7.629)">
+        <path id="Path_15" data-name="Path 15" class="cls-3" d="M9.681,68.36h0c-.38.826-1.156,1.045-1.717.462L.486,61.266a2.379,2.379,0,0,1-.314-2.527h0c.38-.826,1.156-1.045,1.717-.462l7.462,7.556A2.415,2.415,0,0,1,9.681,68.36Z" transform="translate(0.05 -57.95)"/>
+      </g>
+      <g id="Group_3" data-name="Group 3" transform="translate(0)">
+        <path id="Path_16" data-name="Path 16" class="cls-3" d="M.173,37.033h0a2.379,2.379,0,0,1,.314-2.527l7.429-7.629c.561-.583,1.337-.364,1.717.462h0a2.379,2.379,0,0,1-.314,2.527L1.889,37.495C1.345,38.053.569,37.859.173,37.033Z" transform="translate(0.05 -26.55)"/>
+      </g>
+    </g>
+    <g id="Group_9" data-name="Group 9" transform="translate(150.999 0.056)">
+      <g id="Group_7" data-name="Group 7" transform="translate(9.012 6.437)">
+        <g id="Group_5" data-name="Group 5">
+          <path id="Path_17" data-name="Path 17" class="cls-3" d="M969.773,27.339h0c.38-.826,1.156-1.045,1.717-.462l7.462,7.556a2.379,2.379,0,0,1,.314,2.527h0c-.38.826-1.156,1.045-1.717.462l-7.462-7.556A2.379,2.379,0,0,1,969.773,27.339Z" transform="translate(-969.55 -26.55)"/>
+        </g>
+        <g id="Group_6" data-name="Group 6" transform="translate(0.033 7.566)">
+          <path id="Path_18" data-name="Path 18" class="cls-3" d="M979.432,58.472h0A2.379,2.379,0,0,1,979.118,61l-7.429,7.629c-.561.583-1.337.364-1.717-.462h0a2.379,2.379,0,0,1,.314-2.527l7.429-7.629C978.26,57.452,979.035,57.646,979.432,58.472Z" transform="translate(-969.75 -57.693)"/>
+        </g>
+      </g>
+      <g id="Group_8" data-name="Group 8">
+        <path id="Path_19" data-name="Path 19" class="cls-3" d="M915.938,28.055h0a2.269,2.269,0,0,1-.924-2.5L919.8,1.5c.215-1.069.974-1.676,1.7-1.361h0a2.269,2.269,0,0,1,.924,2.5l-4.787,24.052C917.423,27.739,916.664,28.37,915.938,28.055Z" transform="translate(-914.956 -0.056)"/>
+      </g>
+    </g>
+  </g>
+</svg>
