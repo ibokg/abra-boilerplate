@@ -1,24 +1,69 @@
-window.onload = function() {
+/**
+ * Created by GrandMaster on 19.10.2017.
+ */
+/** @var o $ */
+"use strict";
 
-    if($('.placeholder').length > 0) {
-        var placeholder = document.querySelector('.placeholder'),
-            small = placeholder.querySelector('.img-small');
+$.fn.extend({
+    lazyImg: function (props) {
 
-        // 1: load small image and show it
-        var img = new Image();
-        img.src = small.src;
-        img.onload = function () {
-            small.classList.add('loaded');
+        function addAnimate(self, animationName) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            self.addClass('animated ' + animationName).one(animationEnd, function () {
+                $(this).removeClass('animated ' + animationName);
+            });
+        }
+
+        var options = {
+            blurImgClass: '.lazy-img-small',
+            type: 'inline', // image
+//				animate: 'fadeIn'
         };
 
-        // 2: load large image
-        var imgLarge = new Image();
-        imgLarge.src = placeholder.dataset.large;
+        if(props instanceof Object){
+            $.each(props, function (code, val) {
+                options[code] = val;
+            });
+        }
+
+        var _self = $(this);
+        var srcBig = _self.data('large'),
+            imgLarge = new Image();
+
+        if(options.animate){
+//				$(imgLarge).css('visibility', 'hidden');
+        } else {
+            imgLarge.style.display = 'none';
+        }
+
+        imgLarge.src = srcBig;
         imgLarge.onload = function () {
-            imgLarge.classList.add('loaded');
+
+            switch (options.type){
+                case 'inline':
+                    _self.css('background-image', 'url(' + srcBig + ')');
+                    $(imgLarge).remove();
+                    _self.find(options.blurImgClass).remove();
+
+                    if(options.animate){
+                        addAnimate(_self, options.animate);
+                    }
+
+                    break;
+                case 'img':
+
+                    _self.find(options.blurImgClass).fadeOut(200, function () {
+                        _self.find(options.blurImgClass).remove();
+                    });
+
+                    if(options.animate){
+                        $(imgLarge).addClass('animated ' + options.animate);
+                    }
+                    _self.append(imgLarge);
+                    break;
+            }
+
         };
-        placeholder.appendChild(imgLarge);
+        return this;
     }
-
-
-};
+});
